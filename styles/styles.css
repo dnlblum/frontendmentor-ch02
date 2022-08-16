@@ -1,0 +1,142 @@
+body {
+    box-sizing: border-box;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100hw;
+    min-height: 100vh;
+}   
+
+/* Sections */
+
+
+.product-card {
+    display: flex;
+    width: 700px;
+    border-radius: 16px;
+    box-shadow: 16px 16px 16px hsla(212, 21%, 14%, 0.1);
+    
+}
+
+.product-img-desktop {
+    border-radius: 16px 0 0 16px;
+    width: 50%;
+
+}
+
+.product-img-mobile {
+    display: none;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10%;
+    width: 40%;
+    border-radius: 0 16px 16px 0;
+    gap: 32px;
+}
+
+.prices {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
+
+/* Font Styles */
+
+p.breadcrumbs {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+}
+
+h2.product-name {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+    font-size: 2.0rem;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2rem;
+}
+
+
+p.price {
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+p.oldprice {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: line-through;
+    display: inline-block;
+}
+
+/* Buttons */
+
+button.cta {
+    width: 100%;
+    padding: 16px 32px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+button.cta:hover {
+    background-color: hsl(212, 21%, 14%)
+}
+
+.cta-icon {
+    width: 16px;
+}
+
+
+/* Medias Queries */
+
+@media screen and (max-width: 700px){
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto 10%;
+        border-radius: 16px;
+        box-shadow: 16px 16px 16px hsla(212, 21%, 14%, 0.1);
+    }
+
+    .product-img-desktop {
+        display: none;
+    }
+    
+    .product-img-mobile {
+        display: block;
+        border-radius: 16px 16px 0 0;
+        width: 100%;
+    }
+
+    .product-info{
+        width: auto;
+        border-radius: 0  0 16px 16px;
+    }
+}
+
